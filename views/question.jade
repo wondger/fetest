@@ -1,0 +1,31 @@
+extends layout
+block body
+    form(method="post",action="/io/question/create")
+        ul.question-create
+            li
+                label 类型
+                select(name="skill")
+                    option(value="css") CSS
+                    option(value="html") HTML
+                    option(value="javascript") JavaScript
+                    option(value="mixed") Mixed
+            li
+                label 难度
+                select(name="level")
+                    option(value="1") 低
+                    option(value="2") 中
+                    option(value="3") 高
+            li
+                label 时间
+                input(name="time")
+                | min
+            li
+                label 题目
+                br
+                | <textarea name="content"></textarea>
+            li
+                label 备注
+                br
+                | <textarea name="remark"></textarea>
+            li(style="padding-left:35px;")
+                button(type="submit") 提 交

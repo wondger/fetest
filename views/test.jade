@@ -1,0 +1,11 @@
+extends layout
+block body
+    div.error #{error}
+    div.questions
+        form(method="post", action="/io/test/update")
+            input(type="hidden", name="_id", value="#{_id}")
+            for question in questions
+                div.question
+                    pre #{question.content}
+                    textarea(name="#{question._id}") #{question.answer}
+            button(type="submit") 提交

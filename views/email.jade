@@ -1,0 +1,6 @@
+extends layout
+block body
+    div.email
+        form(method="post")
+            label(for="J_Email") 输入您的email开始挑战！
+            input#J_Email(name="email",type="email",required,value="#{email}")

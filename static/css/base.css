@@ -1,0 +1,27 @@
+/*
+ * @name: base.css
+ * @description: 
+ * @author: wondger@gmail.com
+ * @date: 2012-09-19
+ */
+#page{width:990px;margin:0 auto;color:#404040;font-size:14px;line-height:1.8;}
+.body{min-height:600px;}
+.footer{padding:50px 0 20px;text-align:center;}
+
+.email,.link{width:200px;position:absolute;left:50%;left:50%;margin-left:-100px;top:200px;}
+    .email label{display:block;height:24px;line-height:22px;}
+    .email input{width:190px;height:18px;padding:3px;border:1px solid #CCC;}
+
+.question{padding:10px;border-bottom:1px solid #EEE;}
+    .question:hover{background:#FAFAFA;}
+
+/*
+ *form
+ */
+textarea{width:450px;height:150px;border:1px solid #CCC;}
+    .question-create textarea{margin-top:-20px;margin-left:35px;}
+
+
+/*clearfix*/
+.clearfix{zoom:1;}
+.clearfix:after{content:"";display:block;clear:both;visibility:hidden;height:0;}
